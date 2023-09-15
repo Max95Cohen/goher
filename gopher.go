@@ -1,6 +1,6 @@
 package gopher
 
-func main() {
+func GetPixels() {
   var gopher = make([][]uint8, 255)
 
   for i := 0; i < len(gopher); i++ {
