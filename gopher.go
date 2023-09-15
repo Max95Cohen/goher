@@ -1,17 +1,6 @@
 package gopher
 
-func GetPixels() [][]uint8 {
-	const (
-		dx = 256
-		dy = 256
-	)
-
-	var gopher = make([][]uint8, dy)
-
-	for i := 0; i < dy; i++ {
-		gopher[i] = make([]uint8, dx)
-	}
-
+func GetPixels(gopher [][]uint8) [][]uint8 {
 	gopher[0][92] = 0
 	gopher[0][93] = 0
 	gopher[0][94] = 0
